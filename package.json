@@ -1,0 +1,33 @@
+{
+	"name": "voice",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"init:dev": "./scripts/init.dev.sh",
+		"reset:dev": "./scripts/reset.dev.sh",
+		"eslint": "eslint '**/*.{js,ts,tsx}'",
+		"prettier": "prettier --write '**/*.{js,ts,tsx}'"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/kicy-blue/bi-voice.git"
+	},
+	"author": "lanyuankun",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/kicy-blue/bi-voice/issues"
+	},
+	"homepage": "https://github.com/kicy-blue/bi-voice#readme",
+	"dependencies": {},
+	"devDependencies": {
+		"@typescript-eslint/eslint-plugin": "^4.15.2",
+		"@typescript-eslint/parser": "^4.15.2",
+		"eslint": "^7.20.0",
+		"eslint-config-prettier": "^8.1.0",
+		"eslint-plugin-prettier": "^3.3.1",
+		"eslint-plugin-react": "^7.22.0",
+		"lerna": "^3.22.1",
+		"prettier": "^2.2.1"
+	}
+}
