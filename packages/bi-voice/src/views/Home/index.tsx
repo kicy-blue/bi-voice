@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { Col, Layout, Row, Select, Input } from "antd";
-import { AlignLeftOutlined, AudioOutlined } from "@ant-design/icons";
+import {
+	AlignLeftOutlined,
+	AppstoreOutlined,
+	AudioOutlined,
+} from "@ant-design/icons";
 import { useDispatch, useSelector } from "react-redux";
 import { AppDispatch } from "@/models/store";
 import { getConstantsInfo } from "@/models/voice/slice";
@@ -72,7 +76,12 @@ const Home: React.FC = () => {
 					</Col>
 					<Col span={6} className={styles["page-header-right"]}>
 						<AlignLeftOutlined
+							style={{ color: showModal === "single" ? "#0f85e3" : "#a0a0a0" }}
+							onClick={() => changemodel("single")}
+						/>
+						<AppstoreOutlined
 							style={{ color: showModal === "all" ? "#0f85e3" : "#a0a0a0" }}
+							onClick={() => changemodel("all")}
 						/>
 					</Col>
 				</Row>
