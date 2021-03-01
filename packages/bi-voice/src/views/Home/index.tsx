@@ -67,7 +67,7 @@ const Home: React.FC = () => {
 						<Search
 							placeholder="请输入"
 							enterButton
-							size="large"
+							// size="large"
 							suffix={suffix}
 							onSearch={onSearch}
 							allowClear
@@ -97,7 +97,7 @@ const Home: React.FC = () => {
 					<Col span={14}>
 						<MainContent />
 					</Col>
-					<Col>
+					<Col span={6}>
 						<RightContent />
 					</Col>
 				</Row>
