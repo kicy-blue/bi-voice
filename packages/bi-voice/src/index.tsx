@@ -9,6 +9,7 @@ import Home from "./views/Home";
 
 ReactDOM.render(
 	<Provider store={store}>
+    
 		<Home />
 	</Provider>,
 	document.getElementById("root")
